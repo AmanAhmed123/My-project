@@ -1,0 +1,599 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  /* --main-color: #2196f3;
+    --main-color-alt: #1787e0; */
+  /* --main-color: #6f6765; */
+  --main-color: #08fdd8;
+  --main-color-alt: #3f4054;
+  --main-transition: 0.3s;
+  --main-animathion: 4s;
+  --main-pading-top: 100px;
+  --main-pading-bottom: 100px;
+  --main-color-2: #ececec;
+}
+html {
+  scroll-behavior: smooth;
+}
+p::selection {
+  background-color: #600d60;
+  color: white;
+}
+h1::selection {
+  background-color: #600d60;
+  color: white;
+}
+span::selection {
+  background-color: #600d60;
+  color: white;
+}
+h3::selection {
+  background-color: #600d60;
+  color: white;
+}
+h4::selection {
+  background-color: #600d60;
+  color: white;
+}
+a::selection {
+  background-color: #600d60;
+  color: white;
+}
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: -70px;
+    background-color: #c112c1;
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 7px;
+    z-index: 4;
+    text-align: center;
+    width: 59px;
+    border-radius: 50%;
+    height: 56px;
+    transition: 0.2s;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: 'Smooch', cursive;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+  box-shadow: 0 0 10px #ddd inset;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #600d60;
+  border-radius: 20px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  margin: 0;
+  padding: 0;
+}
+.cont {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
+  font-family: "Cairo", sans-serif;
+}
+h1 {
+  color: #c112c1;
+  font-size: 45px !important;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 3px #c1c1c1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0;
+  font-family: 'Shadows Into Light', cursive;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Rules */
+.had {
+  background-color: white;
+}
+.show {
+  right: 10px;
+}
+.had .cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 20px;
+  position: relative;
+}
+.had .cont .info ul {
+  display: flex;
+}
+@media (max-width: 828px) {
+  .had .cont .info {
+    position: absolute;
+    bottom: -152px;
+    background-color: white;
+    right: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+  }
+  .had .cont .info ul {
+    color: white;
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+.had .cont .info ul li a {
+  padding: 10px 25px;
+  font-size: 17px;
+  border-radius: 20px;
+  color: #600d60;
+  transition: 0.2s;
+  position: relative;
+}
+.had .cont .info ul li a:hover {
+  color: white;
+  background-color: #c112c1;
+}
+.had .cont .logo {
+  font-size: 35px;
+  color: #600d60;
+}
+.had .cont i {
+  display: none;
+  color: white;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 25px;
+  background-color: #600d60;
+  position: relative;
+}
+
+@media (max-width: 828px) {
+  .had .cont i {
+    display: block;
+  }
+}
+.under {
+  background-color: #600d60;
+}
+.under .cont {
+  height: calc(100vh - 62px);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+.under .cont .auto-type {
+  background-color: white;
+  color: #600d60;
+  padding: 10px;
+  border-radius: 10px;
+}
+.tow {
+  background-color: white;  
+}
+.tow .cont {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr ; 
+  position: relative;
+}
+.tow .cont .stars {
+  position: absolute;
+  background-color: red;
+  width: 74px;
+  height: 34px;
+  top: -123px;
+  border-radius: 10px;
+}
+.tow .cont .stars2 {
+  position: absolute;
+}
+@media (max-width:878px) {
+  .tow .cont {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.tow .cont .tect {
+  background-color: #945fa9;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 22px;
+  padding: 10px 20px;
+}
+.tow .cont .tect p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+.tow .cont .tect h3 {
+    font-size: 28px;
+}
+.tow .cont .tect h3 span {
+    color: #600d60;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+}
+.tow .cont .img {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:400px){
+  .tow .cont .img img {
+    width: 261px;
+  }
+}
+@media (max-width:280px){
+  .tow .cont .img img {
+    width: 230px;
+  }
+}
+.tow .cont .img img {
+    padding: 16px;
+    box-shadow: 2px 0px 20px 3px #600d60;
+}
+.three {
+  background-color: #600d60;
+  position: relative;
+}
+.three::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 38px;
+  background-color: #600d60;
+  top: -28px;
+  border-radius: 50%;
+  transform: skew(332deg, 62deg);
+  left: -8px;
+}
+
+.three .cont {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  gap: 30px;
+  background-color:#600d60;
+  height: 100%;
+}
+@media (max-width:878px) {
+  .three .cont {
+    grid-template-columns: 1fr;
+  }
+}
+.three .cont .img {
+  background-image: url(../img/lux-space-groove-762x.jpg);
+  background-size: cover;
+  animation: all-good 15s  infinite alternate;
+  border-radius: 35px;
+}
+@media(max-width:878px) {
+  .three .cont .img {
+    height: 460px;
+  }
+}
+@media(max-width:574px) {
+  .three .cont .img {
+    height: 0;
+  }
+}
+.three .cont .says {
+  background-color: #945fa9;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 22px;
+  padding: 10px 20px;
+}
+.three .cont .says h3 {
+  font-size: 28px;
+  font-family: "Cairo", sans-serif;
+}
+.three .cont .says h3 span {
+  color: #600d60;
+}
+.three .cont .says p {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: bold;
+}
+.fore {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+.fore .cont {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  gap: 30px;
+  height: 480px;
+  gap: 40px 40px;
+}
+@media (max-width:878px) {
+  .fore .cont {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.fore .cont .says {
+  background-color: #945fa9;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 22px;
+  padding: 10px 20px;
+  top: 50%;
+  width: 100%;
+}
+.fore .cont .says p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+.fore .cont .show {
+  position: relative;
+  text-align: center;
+}
+.fore .cont .show span {
+  position: absolute;
+  left: 50%;
+  top: 98%;
+  width: 24px;
+  height: 30px;
+  background-color: #600d60;
+}
+.fore .cont .show span::before {
+  content: "";
+  position: absolute;
+  width: 71px;
+  height: 19px;
+  background-color: #600d60;
+  top: 50%;
+  left: -23px;
+  border-radius: 47%;
+}
+@media (max-width:375px) {
+  .fore .cont .show span::before {
+    left: -27px;
+  }
+}
+@media (max-width:375px) {
+  .fore .cont .show span {
+    position: absolute;
+    left: 50%;
+    top: 96%;
+    width: 18px;
+    height: 23px;
+    background-color: #600d60;
+  }
+}
+@media (max-width:280px) {
+  .fore .cont .show span {
+    width: 14px;
+    height: 16px;
+  }
+}
+.fore .cont .tv {
+  width: 100%;
+  height: 100%;
+}
+.fore .cont .show video {
+  width: 100%;
+  border: 5px solid #600d60;
+}
+.fore .cont .says {
+  background-color: #945fa9;
+  color: white;
+  border-radius: 22px;
+  padding: 10px 20px;
+  width: 100%;
+}
+/* @media (max-width:375px) {
+  .fore .cont .show video {
+  border: 14px solid #600d60;
+  }
+}
+@media (min-width:280px),(max-width:375px) {
+  .fore .cont .show video {
+    border: 23px solid #600d60;
+  }
+} */
+.five {
+  background-color:#600d60;
+  position: relative;
+}
+.five::before {
+  content: "";
+  position: absolute;
+  width: 41px;
+  height: 38px;
+  background-color: #600d60;
+  top: -28px;
+  border-radius: 50%;
+  transform: skew(332deg, 62deg);
+  left: -8px;
+}
+.five .cont {
+  text-align: center;
+}
+.five .cont .a {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(274px, 1fr));
+  flex-wrap: wrap;
+  color: white;
+  gap: 25px;
+}
+.five .cont .a .Y {
+  background-color: #945fa9;
+  display: grid;
+  gap: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.five .cont .a .Y:hover {
+  transform: translateY(-10px);
+}
+.five .cont .a .Y:hover a i {
+  color: white;
+}
+.five .cont .a .Y::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 8px;
+  top: -3px;
+  transform: translateX(-50%);
+  background-color: white;
+  left: 50%;
+  transition: 0.5s;
+
+}
+.five .cont .a .Y:hover:before {
+  width: 100%;
+}
+@media (max-width:280px) {
+  .five .cont .a .Y {
+    width: 82%;
+  }
+}
+.five .cont .a .Y h3 {
+  margin: 0 0 10px 0;
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+}
+.five .cont .a .Y a i {
+  font-size: 31px;
+  padding: 13px;
+  color: #600d60;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.fot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 158px;
+  padding: 30px;
+  position: relative;
+}
+.fot h4 {
+  font-size: 20px;
+  color: white;
+} 
+/* .fot::before {
+  content: "";
+    position: fixed;
+    width: 349%;
+    height: 111%;
+    background-color: #600d60;
+    left: 50%;
+    top: -19%;
+    transform: translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 5s ease-in-out infinite alternate;
+} */
+.fot::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 236px;
+  background-color: #600d60;
+  border-radius: 50%;
+  top: -140px;
+  z-index: -1;
+  animation: waving 3s ease-in-out infinite alternate;
+}
+@media (max-width:375px) {
+.fot::before{
+  animation: up2 5s ease-in-out infinite alternate;
+  border-radius: 37px;
+}
+}
+@keyframes all-good{
+  0%, 100% {
+    background-image: url(../img/lux-space-groove-762x.jpg);
+  }
+  25%{
+    background-image: url(../img/https___blogoflegends.com_files_2020_10_Lux_7.jpg);
+  }
+  50%{
+    background-image: url(../img/Lux_6.jpg);
+  }
+  75% {
+    background-image: url(../img/Lux_18.jpg);
+  }
+
+}
+  @keyframes waving {
+  from {
+  top: -208px;
+  }
+  to {
+    top: -114px;
+  }
+} 
+@keyframes up2 {
+  from {
+  top: -300px;
+  }
+  to {
+    top: -97px;
+  }
+} 
+
